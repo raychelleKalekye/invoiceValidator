@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INVOICE VALIDATOR</title>
+        <style>
+                   
+            *{
+                background-image: url('invoicebg1.jpg');
+            }
+            .info h2{
+                font-size: 40px;
+                color:rgb(165, 165, 51);
+                text-align:center;
+            }
+            .info p{
+                font-size:30px;
+                
+            }
+            .inv_form{
+                border:10px solid salmon;
+                width:700px;
+                height:500px;
+                padding-left:90px;
+                margin-left:140px;
+
+            }
+            .inv_form h3{
+                font-size: 25px;
+                
+            } 
+            .inv_form label{
+                font-size: 20px;
+                padding-left:  15px;
+                padding-right:20px;
+                margin-left:5px;
+            }
+        </style>
+        </style>
+    </head>
+    <body>
+       <div class="info">
+        <h2>VALIDATE YOUR INVOICE HERE</h2>
+        <p>Invoice validator is a new module in the Academic Loan Product
+             that ensures invoices sent by parents are authentic.These are measures
+             taken to reduce illegitimate school fee invoices.
+        </p>
+       </div>
+       <form class="inv_fomr" action="/invoicevalidator" method="POST" enctype="multipart/form-data">
+            
+       <h3>KINDLY ENTER  PDF FILE OF THE INVOICE</h3>
+       <label for="img">UPLOAD HERE:</label>
+       <input type="file" accept=".jpg,.pdf,.png" name="img" id="img">
+       <br><br>
+       <button>Convert to Image</button>
+       </form>
+
+
+    </body>
+</html>
